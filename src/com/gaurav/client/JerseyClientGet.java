@@ -11,26 +11,25 @@ public class JerseyClientGet {
 		  
 			JerseyClientGet client = new JerseyClientGet();
 			client.getResponse();
-		}
+	} // main ends here
 	 
-	 
-		private void getResponse() {
-			try {
-	 
-				Client client = Client.create();
-				WebResource webResource = client.resource("http://date.jsontest.com");
-				ClientResponse response = webResource.accept("application/xml").get(ClientResponse.class);
-				if (response.getStatus() != 200) {
-					throw new RuntimeException("Failed : HTTP error code : " + response.getStatus());
-				}
-	 
-				String output = response.getEntity(String.class);
-				System.out.println("============getResponse============");
-				System.out.println(output);
-	 
-			} catch (Exception e) {
-				e.printStackTrace();
+	//
+	private void getResponse() {
+		try {
+			Client client = Client.create();
+			WebResource webResource = client.resource("http://date.jsontest.com");
+			ClientResponse response = webResource.accept("application/xml").get(ClientResponse.class);
+			if (response.getStatus() != 200) {
+				throw new RuntimeException("Failed : HTTP error code : " + response.getStatus());
 			}
-		}
+			
+			String output = response.getEntity(String.class);
+			System.out.println("============getResponse============");
+			System.out.println(output);
+	
+		} catch (Exception e) {
+			e.printStackTrace();
+			}
+	} // getResponse ends here
 
 }
