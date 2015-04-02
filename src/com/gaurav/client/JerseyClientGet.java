@@ -6,7 +6,7 @@ import com.sun.jersey.api.client.WebResource;
  
 public class JerseyClientGet {
  
-	
+	  // Main method starts here
 	  public static void main(String[] args) {
 		  
 			JerseyClientGet client = new JerseyClientGet();
