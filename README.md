@@ -1,3 +1,4 @@
 # RestClient
 Simple Rest Client in JAVA using Jersey
-Gaurav Sharma
+
+Gaurav Sharma codergs
