@@ -126,20 +126,7 @@ public class JerseyClientGet {
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
 		}
-		
-	   /*  
-		BufferedReader br = new BufferedReader(new FileReader(new File(csvFile)));
-		String line;
-		while ((line = br.readLine()) != null) {
-
-		    String[] entries = line.split(",");
-
-		    CarOwner owner = new CarOwner(entires[0], entries[1], entries[2], entries[3]);
-
-		    owners.add(owner);
-		}
-		*/
-		
+				
 	} // getResponse ends here
 
 }
